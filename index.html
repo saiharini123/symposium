@@ -2,126 +2,159 @@
 <html>
 <head>
     <title>College Symposium Registration</title>
+
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color:#eef3f7;
+            margin:0;
+        }
+
+        h1{
+            background-color:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin:0;
+        }
+
+        h2{
+            color:#003366;
+            text-align:center;
+        }
+
+        img{
+            display:block;
+            margin:20px auto;
+            border:2px solid #003366;
+        }
+
+        p{
+            text-align:center;
+        }
+
+        a{
+            color:blue;
+            text-decoration:none;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+        ul,ol{
+            width:300px;
+            margin:auto;
+            background:white;
+            padding:20px;
+            border:1px solid #999;
+        }
+
+        table{
+            width:70%;
+            margin:auto;
+            background:white;
+            border-collapse:collapse;
+            border:1px solid #999;
+        }
+
+        th{
+            background-color:#003366;
+            color:white;
+            padding:12px;
+            font-size:22px;
+        }
+
+        td{
+            padding:12px;
+            border-bottom:1px solid #ddd;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=tel],
+        select,
+        textarea{
+            width:95%;
+            padding:8px;
+            border:1px solid #666;
+        }
+
+        textarea{
+            resize:none;
+        }
+
+        input[type=submit]{
+            background-color:green;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            cursor:pointer;
+        }
+
+        input[type=reset]{
+            background-color:red;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            cursor:pointer;
+        }
+
+    </style>
+
 </head>
 
-<body style="margin:0;
-font-family:Arial,Helvetica,sans-serif;
-background:linear-gradient(to right,#4facfe,#00f2fe);">
+<body>
 
-<center>
+<h1>TECHFEST 2026</h1>
 
-<h1 style="color:white;
-background:linear-gradient(to right,#ff512f,#dd2476);
-padding:20px;
-width:70%;
-border-radius:15px;
-box-shadow:0px 8px 20px gray;
-margin-top:30px;">
-TECHFEST 2026
-</h1>
+<img src="symp1.jpg" alt="Symposium Banner" width="350" height="200">
 
-<img src="symp1.jpg"
-alt="Symposium Banner"
-width="350"
-height="200"
-style="border-radius:20px;
-border:5px solid white;
-box-shadow:0px 10px 25px gray;">
+<h2>College Symposium Registration Form</h2>
 
-<h2 style="color:white;
-text-shadow:2px 2px 5px black;">
-College Symposium Registration Form
-</h2>
-
-<p style="font-size:20px;color:white;">
-Visit our website :
-<a href="https://www.google.com"
-target="_blank"
-style="color:yellow;
-font-weight:bold;
-text-decoration:none;">
-Click Here
-</a>
+<p>
+    Visit our website :
+    <a href="https://www.google.com" target="_blank">
+        Click Here
+    </a>
 </p>
 
-</center>
+<hr>
 
-<hr style="border:2px solid white;">
+<h2>Events Available</h2>
 
-<h2 style="text-align:center;
-color:white;">
-Events Available
-</h2>
-
-<ul style="width:300px;
-margin:auto;
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0px 8px 20px gray;
-font-size:18px;
-line-height:2;">
-<li>Paper Presentation</li>
-<li>Project Expo</li>
-<li>Technical Quiz</li>
-<li>Debugging</li>
-<li>Web Designing</li>
+<ul>
+    <li>Paper Presentation</li>
+    <li>Project Expo</li>
+    <li>Technical Quiz</li>
+    <li>Debugging</li>
+    <li>Web Designing</li>
 </ul>
 
 <br>
 
 <form>
 
-<table border="0"
-style="width:70%;
-margin:auto;
-background:white;
-border-radius:20px;
-padding:20px;
-box-shadow:0px 10px 30px gray;">
+<table>
 
 <tr>
-<th colspan="2"
-style="background:linear-gradient(to right,#667eea,#764ba2);
-color:white;
-font-size:28px;
-padding:18px;
-border-radius:10px;">
-Participant Details
-</th>
+<th colspan="2">Participant Details</th>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Name</td>
-<td style="padding:15px;">
-<input type="text"
-placeholder="Enter your name"
-style="width:95%;
-padding:10px;
-border-radius:25px;
-border:2px solid #667eea;">
-</td>
+<td><b>Name</b></td>
+<td><input type="text" placeholder="Enter your name"></td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Register Number</td>
-<td style="padding:15px;">
-<input type="text"
-style="width:95%;
-padding:10px;
-border-radius:25px;
-border:2px solid #667eea;">
-</td>
+<td><b>Register Number</b></td>
+<td><input type="text"></td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Department</td>
-<td style="padding:15px;">
-<select
-style="width:95%;
-padding:10px;
-border-radius:25px;
-border:2px solid #667eea;">
+<td><b>Department</b></td>
+<td>
+<select>
 <option>CSE</option>
 <option>ECE</option>
 <option>EEE</option>
@@ -132,8 +165,8 @@ border:2px solid #667eea;">
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Year</td>
-<td style="padding:15px;">
+<td><b>Year</b></td>
+<td>
 <input type="radio" name="year"> I Year
 <input type="radio" name="year"> II Year
 <input type="radio" name="year"> III Year
@@ -142,109 +175,59 @@ border:2px solid #667eea;">
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Gender</td>
-<td style="padding:15px;">
+<td><b>Gender</b></td>
+<td>
 <input type="radio" name="gender"> Male
 <input type="radio" name="gender"> Female
 </td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Email</td>
-<td style="padding:15px;">
-<input type="email"
-style="width:95%;
-padding:10px;
-border-radius:25px;
-border:2px solid #667eea;">
-</td>
+<td><b>Email</b></td>
+<td><input type="email"></td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Phone Number</td>
-<td style="padding:15px;">
-<input type="tel"
-style="width:95%;
-padding:10px;
-border-radius:25px;
-border:2px solid #667eea;">
-</td>
+<td><b>Phone Number</b></td>
+<td><input type="tel"></td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Events Interested</td>
-<td style="padding:15px;">
-<input type="checkbox"> Paper Presentation
-<br><br>
-<input type="checkbox"> Project Expo
-<br><br>
-<input type="checkbox"> Technical Quiz
-<br><br>
-<input type="checkbox"> Debugging
-<br><br>
+<td><b>Events Interested</b></td>
+<td>
+<input type="checkbox"> Paper Presentation <br><br>
+<input type="checkbox"> Project Expo <br><br>
+<input type="checkbox"> Technical Quiz <br><br>
+<input type="checkbox"> Debugging <br><br>
 <input type="checkbox"> Web Designing
 </td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">College Name</td>
-<td style="padding:15px;">
-<input type="text"
-style="width:95%;
-padding:10px;
-border-radius:25px;
-border:2px solid #667eea;">
+<td><b>College Name</b></td>
+<td><input type="text"></td>
+</tr>
+
+<tr>
+<td><b>Upload Abstract</b></td>
+<td><input type="file"></td>
+</tr>
+
+<tr>
+<td><b>Address</b></td>
+<td>
+<textarea rows="4"></textarea>
 </td>
 </tr>
 
 <tr>
-<td style="padding:15px;font-weight:bold;">Upload Abstract</td>
-<td style="padding:15px;">
-<input type="file">
-</td>
-</tr>
+<td colspan="2" align="center">
 
-<tr>
-<td style="padding:15px;font-weight:bold;">Address</td>
-<td style="padding:15px;">
-<textarea rows="4"
-cols="40"
-style="border:2px solid #667eea;
-border-radius:15px;
-padding:10px;"></textarea>
-</td>
-</tr>
+<input type="submit" value="REGISTER">
 
-<tr>
-<td colspan="2"
-align="center"
-style="padding:20px;">
+&nbsp;&nbsp;
 
-<input type="submit"
-value="REGISTER"
-style="background:linear-gradient(to right,#11998e,#38ef7d);
-color:white;
-padding:12px 35px;
-border:none;
-border-radius:30px;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-box-shadow:0px 5px 15px gray;">
-
-&nbsp;&nbsp;&nbsp;
-
-<input type="reset"
-value="CLEAR"
-style="background:linear-gradient(to right,#ff416c,#ff4b2b);
-color:white;
-padding:12px 35px;
-border:none;
-border-radius:30px;
-font-size:18px;
-font-weight:bold;
-cursor:pointer;
-box-shadow:0px 5px 15px gray;">
+<input type="reset" value="CLEAR">
 
 </td>
 </tr>
@@ -255,31 +238,12 @@ box-shadow:0px 5px 15px gray;">
 
 <br>
 
-<h2 style="text-align:center;
-color:white;">
-Contact Details
-</h2>
+<h2>Contact Details</h2>
 
-<ol style="width:320px;
-margin:auto;
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0px 8px 20px gray;
-font-size:18px;
-line-height:2;">
-<li>Email : techfest2026@gmail.com</li>
-<li>Phone : 9876543210</li>
-<li>Venue : Symposium Hall</li>
+<ol>
+    <li>Email : techfest2026@gmail.com</li>
+    <li>Phone : 9876543210</li>
+    <li>Venue : Symposium Hall</li>
 </ol>
-
-<br><br>
-
-<p style="text-align:center;
-color:white;
-font-size:18px;">
-© 2026 TECHFEST | All Rights Reserved
-</p>
-
 </body>
 </html>
